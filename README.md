@@ -17,6 +17,12 @@ related to [Learning from Complementary Labels](https://arxiv.org/pdf/1705.07541
 
 - [Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels](https://arxiv.org/pdf/1804.06872.pdf) (Han, NIPS 2018)
  > 
+ 
+ 
+- [TRAINING DEEP NEURAL-NETWORKS USING A NOISE ADAPTATION LAYER](https://openreview.net/pdf?id=H12GRgcxg) (Goldberger, ICLR 2017)
+ > case 1: noisy labels are only dependent on the correct labels
+ > case 2: noisy labels are dependent on the features in addition to the correct labels
+
 
 2. Related Works
 
