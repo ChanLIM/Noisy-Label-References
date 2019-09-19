@@ -2,6 +2,8 @@
 
 ## 1. Noisy Data Generation Methods
 
+Objective : mimic the structure of real mistakes for similar classes and mistakes for unknown classes
+
 ### - [Learning with Biased Complementary Labels](https://arxiv.org/pdf/1711.09535.pdf) (Yu, ECCV 2018)
  >Where Y and Ybar is true and complementary labels, previous methods implicitly assume that 
  P(Y¯ = i|Y = j), ∀i ≠ j are identical, which is not true in practice because humans are biased toward their own experience.(표범만 봤던 사람은 치타를 봐도 표범이라고 label함) Therefore the transition probabilities should be different.
@@ -18,13 +20,9 @@
  
  > pair flipping method is not realistic in a way that two labels are just matched randomly, not according to how similar they look like so that people might make mistakes.
  
- followed the noise generation method used in \
- [Making Deep Neural Networks Robust to Label Noise: a Loss Correction Approach](http://openaccess.thecvf.com/content_cvpr_2017/papers/Patrini_Making_Deep_Neural_CVPR_2017_paper.pdf) (Patrini, CVPR 2017)
- and\
- [Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
- 
- Making Deep Neural Networks Robust to Label Noise: a Loss Correction Approach - asymmetric, class-conditional noise, where each label y in the training set is flipped to ytilda while feature vectors are untouched. The noise transition matrix is row-stochastic and not necessarily symmetric across the classes.
- [Patrini, CVPR 2017](https://github.com/giorgiop/loss-correction/blob/master/noise.py) 
+ followed the noise generation method used in  
+>[Making Deep Neural Networks Robust to Label Noise: a Loss Correction Approach](http://openaccess.thecvf.com/content_cvpr_2017/papers/Patrini_Making_Deep_Neural_CVPR_2017_paper.pdf) (Patrini, CVPR 2017) - asymmetric, class-conditional noise, where each label y in the training set is flipped to ytilda while feature vectors are untouched. The noise transition matrix is row-stochastic and not necessarily symmetric across the classes.
+ [github codes](https://github.com/giorgiop/loss-correction/blob/master/noise.py) 
  - def noisify_mnist_asymmetric()\
  #mistakes:
  
@@ -46,21 +44,24 @@
         # 3 -> 8
         P[3, 3], P[3, 8] = 1. - n, n
         
+ Noise Transition Matrix, P
  
 | |0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---|:---|:---:|---:|---:|---:|---:|---:|---:|---:|
-|0|  |   |   |   |   |   |   |   |   |   |
-|1|  |   |   |   |   |   |   |   |   |   |
+|0| 1|   |   |   |   |   |   |   |   |   |
+|1|  | 1 |   |   |   |   |   |   |   |   |
 |2|  |   |1-n|   |   |   |   | n |   |   |
 |3|  |   |   |1-n|   |   |   |   | n |   |
-|4|  |   |   |   |   |   |   |   |   |   |
+|4|  |   |   |   | 1 |   |   |   |   |   |
 |5|  |   |   |   |   |1-n| n |   |   |   |
 |6|  |   |   |   |   | n |1-n|   |   |   |
 |7|  | n |   |   |   |   |   |1-n|   |   |
-|8|  |   |   |   |   |   |   |   |   |   |
-|9|  |   |   |   |   |   |   |   |   |   |
+|8|  |   |   |   |   |   |   |   | 1 |   |
+|9|  |   |   |   |   |   |   |   |   | 1 |
 
  
+ 
+>[Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
  
  
  
