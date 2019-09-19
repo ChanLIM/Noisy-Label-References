@@ -23,6 +23,36 @@
  and\
  [Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
  
+ Making Deep Neural Networks Robust to Label Noise: a Loss Correction Approach - asymmetric, class-conditional noise, where each label y in the training set is flipped to ytilda while feature vectors are untouched. The noise transition matrix is row-stochastic and not necessarily symmetric across the classes.
+ [Patrini, CVPR 2017](https://github.com/giorgiop/loss-correction/blob/master/noise.py) 
+ - def noisify_mnist_asymmetric()\
+ mistakes:\
+        1 <- 7    automobile <- truck\
+        2 -> 7    bird -> airplane\
+        3 -> 8    deer -> horse\
+        5 <-> 6   cat <-> dog
+        
+        automobile <- truck
+        bird -> airplane
+        cat <-> dog
+        deer -> horse
+ 
+| |0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|:---|:---:|---:|---:|---:|---:|---:|---:|---:|
+|0|  |   |   |   |   |   |   |   |   |   |
+|1|  |   |   |   |   |   |   |   |   |   |
+|2|  |   |   |   |   |   |   |   |   |   |
+|3|  |   |   |   |   |   |   |   |   |   |
+|4|  |   |   |   |   |   |   |   |   |   |
+|5|  |   |   |   |   |   |   |   |   |   |
+|6|  |   |   |   |   |   |   |   |   |   |
+|7|  |   |   |   |   |   |   |   |   |   |
+|8|  |   |   |   |   |   |   |   |   |   |
+|9|  |   |   |   |   |   |   |   |   |   |
+
+ 
+ 
+ 
  
 ### - [TRAINING DEEP NEURAL-NETWORKS USING A NOISE ADAPTATION LAYER](https://openreview.net/pdf?id=H12GRgcxg) (Goldberger, ICLR 2017)
  > Case 1: noisy labels are only dependent on the correct labels
