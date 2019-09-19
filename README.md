@@ -50,7 +50,7 @@
         P[3, 3], P[3, 8] = 1. - n, n
         
  >Noise Transition Matrix, P
- >(MNIST와 CIFAR10의 경우 Coteaching의 pair flipping에 해당)
+ >(Coteaching의 pair flipping을 일부 label에 적용한 경우에 해당)
  
 | |0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---|:---|:---:|---:|---:|---:|---:|---:|---:|---:|
@@ -70,7 +70,7 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  
  
 >[Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
->> Section 4.1 : Specifically, we used a **fixed random permutation** of the labels as visualized in figure 2, value on column is mapped to a value on row with some probability (In case of MNIST / didn't use CIFAR dataset)
+>> Section 4.1 MNIST with Noisy Labels : Specifically, we used a **fixed random permutation** of the labels as visualized in figure 2, value on column is mapped to a value on row with some probability (didn't use CIFAR dataset)
  
         # 0 -> 2
         # 1 -> 5
@@ -78,14 +78,15 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
         # ...
 
 ![Reed, ICLR 2015 Figure2](/img/Reed2015_Figure2.PNG)
- (original github code not available)
+ (original github code not available)\
+->label을 sort해서 적용하면 coteaching pair flipping과 동일
  
 >[Learning with Symmetric Label Noise: The Importance of Being Unhinged](https://arxiv.org/pdf/1505.07634.pdf) (van Rooyen, NIPS 2015)
  
  
  
  
-### - [TRAINING DEEP NEURAL-NETWORKS USING A NOISE ADAPTATION LAYER](https://openreview.net/pdf?id=H12GRgcxg) (Goldberger, ICLR 2017)
+### - [Training deep neural-networks using a noise adaptation layer](https://openreview.net/pdf?id=H12GRgcxg) (Goldberger, ICLR 2017)
  > Case 1: noisy labels are only dependent on the correct labels
  
  > Case 2: noisy labels are dependent on the features in addition to the correct labels
