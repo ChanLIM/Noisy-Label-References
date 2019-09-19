@@ -79,8 +79,7 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
         # 8 -> 9
         # 9 -> 1
         
-![Reed, ICLR 2015 Figure2](/images/Reed2015.jpeg)
- 
+![Reed, ICLR 2015 Figure2](/img/Reed2015_Figure2.PNG)
  
  
 >[Learning with Symmetric Label Noise: The Importance of Being Unhinged](https://arxiv.org/pdf/1505.07634.pdf) (van Rooyen, NIPS 2015)
