@@ -27,10 +27,10 @@
  [Patrini, CVPR 2017](https://github.com/giorgiop/loss-correction/blob/master/noise.py) 
  - def noisify_mnist_asymmetric()\
  mistakes:\
-        1 <- 7    automobile <- truck\
-        2 -> 7    bird -> airplane\
-        3 -> 8    deer -> horse\
-        5 <-> 6   cat <-> dog
+        1 `<- 7    (automobile `<- truck) Some trucks are mistaken as automobile\
+        2 -> 7    (bird -> airplane)\
+        3 -> 8    (deer -> horse)\
+        5 `<-> 6   (cat `<-> dog)
         
         # 1 <- 7
         P[7, 7], P[7, 1] = 1. - n, n
