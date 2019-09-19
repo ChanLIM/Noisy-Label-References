@@ -18,6 +18,11 @@
  
  > pair flipping method is not realistic in a way that two labels are just matched randomly, not according to how similar they look like so that people might make mistakes.
  
+ followed the noise generation method used in \
+ [Making Deep Neural Networks Robust to Label Noise: a Loss Correction Approach](http://openaccess.thecvf.com/content_cvpr_2017/papers/Patrini_Making_Deep_Neural_CVPR_2017_paper.pdf) (Patrini, CVPR 2017)
+ and\
+ [Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
+ 
  
 ### - [TRAINING DEEP NEURAL-NETWORKS USING A NOISE ADAPTATION LAYER](https://openreview.net/pdf?id=H12GRgcxg) (Goldberger, ICLR 2017)
  > Case 1: noisy labels are only dependent on the correct labels
