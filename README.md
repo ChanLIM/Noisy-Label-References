@@ -46,7 +46,7 @@
         P[3, 3], P[3, 8] = 1. - n, n
         
  >Noise Transition Matrix, P
- >(만들어진 transition matrix에 따라 y를 변환. Coteaching의 pair flipping에 해당)
+ >(MNIST와 CIFAR10의 경우 Coteaching의 pair flipping에 해당)
  
 | |0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---|:---|:---:|---:|---:|---:|---:|---:|---:|---:|
@@ -62,8 +62,24 @@
 |9|  |   |   |   |   |   |   |   |   | 1 |
 
 
+CIFAR 100의 경우 Superclass 써서 조금 다른 방법
+ 
  
 >[Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
+>> Specifically, we used a fixed random permutation of the labels as visualized in figure 2,
+   
+        # 0 -> 2
+        # 1 -> 5
+        # 2 -> 4
+        # 3 -> 6
+        # 4 -> 3
+        # 5 -> 7
+        # 6 -> 8
+        # 7 -> 0
+        # 8 -> 9
+        # 9 -> 1
+        
+![Reed, ICLR 2015 Figure2](/images/Reed2015.jpeg)
  
  
  
