@@ -10,15 +10,19 @@
  >Where Y and Ybar is true and complementary labels, previous methods implicitly assume that 
  P(Y¯ = i|Y = j), ∀i ≠ j are identical, which is not true in practice because humans are biased toward their own experience.(표범만 봤던 사람은 치타를 봐도 표범이라고 label함) Therefore the transition probabilities should be different.
  
->Uses **complementary label** which specifies a class that an object does not belong to. Complementary labels are sometimes easily obtainable, especially when the class set is relatively large. Given an observation in multi-class classifcation, identifying a class label that is incorrect for the observation is often much easier than identifying the true label.
+>Uses **complementary label** which specifies a class that an object does not belong to. Complementary labels are sometimes easily obtainable, especially when the class set is relatively large. Given an observation in multi-class classifcation, identifying a class label that is incorrect for the observation is often much easier than identifying the true label.\
+>(맞는 거 하나를 고르는 것보다 확실히 답이 아닌 하나를 고르는 labeling이 난이도가 낮음. 이를 이용해서 학습하려는 시도)
 
->**Method** : 확실히 아닌 하나를 빼고 나머지 9개에 대해 1)uniform probability 2)without 0 (3그룹으로 나누어서 합이 1이되게끔 0.2 0.1 0.033)
-3)with 0 (3개 label 골라서 합이 1이 되게끔)
+>**Method** : 확실히 틀린 class 하나를 빼고 나머지 9개에 대해 :
+
+>1.uniform probability\
+>2.without 0 (3그룹으로 나누어서 합이 1이되게끔 0.2 0.1 0.033)\
+>3.with 0 (3개 label 골라서 합이 1이 되게끔)
 
 >related to [Learning from Complementary Labels](https://arxiv.org/pdf/1705.07541.pdf) (Ishida, NIPS 2017)
 
 ### - [Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels](https://arxiv.org/pdf/1804.06872.pdf) (Han, NIPS 2018)
- > Uses *pair flipping* and *symmetric flipping*. Pair flipping refers to a case where a certain label is misclassified to a certain label since it's similar(but doesn't imply similarity in a way that two classes are paired). Symmetric flipping refers to a case where a label is not identified, so it is given any other random label
+ > Uses **pair flipping** and **symmetric flipping**. Pair flipping refers to a case where a certain label is misclassified to a certain label since it's similar(but doesn't imply similarity in a way that two classes are paired). Symmetric flipping refers to a case where a label is not identified, so it is given any other random label
  
  > pair flipping method is not realistic in a way that two labels are just matched randomly, not according to how similar they look like so that people might make mistakes.
  
@@ -66,14 +70,15 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  
  
 >[Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
->> Specifically, we used a fixed random permutation of the labels as visualized in figure 2, value on column is mapped to a value on row with some probability 
-   
+>> Section 4.1 : Specifically, we used a **fixed random permutation** of the labels as visualized in figure 2, value on column is mapped to a value on row with some probability (In case of MNIST / didn't use CIFAR dataset)
+ 
         # 0 -> 2
         # 1 -> 5
         # 2 -> 4
-        
+        # ...
+
 ![Reed, ICLR 2015 Figure2](/img/Reed2015_Figure2.PNG)
- 
+ (original github code not available)
  
 >[Learning with Symmetric Label Noise: The Importance of Being Unhinged](https://arxiv.org/pdf/1505.07634.pdf) (van Rooyen, NIPS 2015)
  
@@ -85,8 +90,6 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  
  > Case 2: noisy labels are dependent on the features in addition to the correct labels
  
- > 
-
 
 ## 2. Related Works
 
