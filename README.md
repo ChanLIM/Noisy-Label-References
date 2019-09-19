@@ -93,8 +93,9 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  
 
 ## 2. Related Works
+[Learning with Label Noise Github Page](https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise)
 
-[Learning with Label Noise](https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise)
 
+[Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
 
 ## 3. Evaluation Measure
