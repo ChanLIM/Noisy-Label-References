@@ -22,10 +22,10 @@
  
  > pair flipping method is not realistic in a way that two labels are just matched randomly, not according to how similar they look like so that people might make mistakes.
  
- followed the noise generation method used in  
->>[Making Deep Neural Networks Robust to Label Noise: a Loss Correction Approach](http://openaccess.thecvf.com/content_cvpr_2017/papers/Patrini_Making_Deep_Neural_CVPR_2017_paper.pdf) (Patrini, CVPR 2017) - asymmetric, class-conditional noise, where each label y in the training set is flipped to ytilda while feature vectors are untouched. The noise transition matrix is row-stochastic and not necessarily symmetric across the classes.
+ #### followed the noise generation method used in: 
+> -[Making Deep Neural Networks Robust to Label Noise: a Loss Correction Approach](http://openaccess.thecvf.com/content_cvpr_2017/papers/Patrini_Making_Deep_Neural_CVPR_2017_paper.pdf) (Patrini, CVPR 2017) - asymmetric, class-conditional noise, where each label y in the training set is flipped to ytilda while feature vectors are untouched. The noise transition matrix is row-stochastic and not necessarily symmetric across the classes.
  [github codes](https://github.com/giorgiop/loss-correction/blob/master/noise.py) 
- >>- def noisify_mnist_asymmetric()\
+ >- def noisify_mnist_asymmetric()
  
         # 1 <- 7    (automobile <- truck) Some trucks are mistaken as automobile
         # 2 -> 7    (bird -> airplane)
@@ -45,8 +45,8 @@
         # 3 -> 8
         P[3, 3], P[3, 8] = 1. - n, n
         
- >>Noise Transition Matrix, P
- >>(만들어진 transition matrix에 따라 y를 변환. Coteaching의 pair flipping에 해당)
+ >Noise Transition Matrix, P
+ >(만들어진 transition matrix에 따라 y를 변환. Coteaching의 pair flipping에 해당)
  
 | |0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---|:---|:---:|---:|---:|---:|---:|---:|---:|---:|
@@ -63,11 +63,11 @@
 
 
  
->>[Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
+>[Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
  
  
  
->>[Learning with Symmetric Label Noise: The Importance of Being Unhinged](https://arxiv.org/pdf/1505.07634.pdf) (van Rooyen, NIPS 2015)
+>[Learning with Symmetric Label Noise: The Importance of Being Unhinged](https://arxiv.org/pdf/1505.07634.pdf) (van Rooyen, NIPS 2015)
  
  
  
