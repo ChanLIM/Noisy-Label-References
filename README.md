@@ -44,6 +44,7 @@ Objective : mimic the structure of real mistakes for similar classes and mistake
         P[3, 3], P[3, 8] = 1. - n, n
         
  >Noise Transition Matrix, P
+ >(만들어진 transition matrix에 따라 y를 변환. Coteaching의 pair flipping에 해당)
  
 | |0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---|:---|:---:|---:|---:|---:|---:|---:|---:|---:|
@@ -58,7 +59,6 @@ Objective : mimic the structure of real mistakes for similar classes and mistake
 |8|  |   |   |   |   |   |   |   | 1 |   |
 |9|  |   |   |   |   |   |   |   |   | 1 |
 
-만들어진 transition matrix에 따라 y를 변환. Coteaching의 pair flipping에 해당하는 방법.
 
  
 >[Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
