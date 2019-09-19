@@ -66,18 +66,11 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  
  
 >[Training Deep Neural Networks on Noisy Labels with Bootstrapping](https://arxiv.org/pdf/1412.6596.pdf) (Reed, ICLR 2015)
->> Specifically, we used a fixed random permutation of the labels as visualized in figure 2,
+>> Specifically, we used a fixed random permutation of the labels as visualized in figure 2, value on column is mapped to a value on row with some probability 
    
         # 0 -> 2
         # 1 -> 5
         # 2 -> 4
-        # 3 -> 6
-        # 4 -> 3
-        # 5 -> 7
-        # 6 -> 8
-        # 7 -> 0
-        # 8 -> 9
-        # 9 -> 1
         
 ![Reed, ICLR 2015 Figure2](/img/Reed2015_Figure2.PNG)
  
