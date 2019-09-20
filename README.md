@@ -101,25 +101,25 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
 Taxonomy of Label Noise in the Survey Paper
 
 1. NCAR - Noisy Completely at Random Model
-> the occurrence of an error E is independent of the other random variables, including the true class itself\
-> biased coin of noise rate / fair dice to choose wrong label\
-> uniform label noise
+> - the occurrence of an error E is independent of the other random variables, including the true class itself\
+> - biased coin of noise rate / fair dice to choose wrong label\
+> - uniform label noise
 
 2. NAR - Noisy at Random Model
-> probability of error depends on the true class Y, but still independent of X\
-> allows modeling asymmetric label noise, when instances from certain classes are more prone to be mislabeled.\
-> NCAR label noise is a special case of NAR label noise.\
+> - probability of error depends on the true class Y, but still independent of X\
+> - allows modeling asymmetric label noise, when instances from certain classes are more prone to be mislabeled.\
+> - NCAR label noise is a special case of NAR label noise.\
 > ex.) arbitrary labeling matrices & pairwise label noise\
-> pairwise label noise : Two classes c1 and c2 are selected. Each instance of class c1 has a probability to be incorrectly labeled as c2 and vice versa. For this label noise, only two nondiagonal entries of the labeling matrix are nonzero.
+> - pairwise label noise : Two classes c1 and c2 are selected. Each instance of class c1 has a probability to be incorrectly labeled as c2 and vice versa. For this label noise, only two nondiagonal entries of the labeling matrix are nonzero.
 
 NCAR and NAR considers that the label noise affects all instances with no distinction. -> not realistic\
 Samples may be more likely mislabeled when they are similar to instances of another class.\
 More difficult samples or low density (low encountered cases) may have higher chances of mislabeling.
 
 3. NNAR - Noisy Not at Random Model
-> the occurrence of an error E is dependent on both variables X and Y,(mislabeling is more probable for certain classes and in certain regions of the X space.)\
-> The most general case of label noise.\
-> feature dependent한 경우(NNAR)와 feature independent한 경우(NCAR & NAR)의 경우로 나눌 수 있음.
+> - the occurrence of an error E is dependent on both variables X and Y,(mislabeling is more probable for certain classes and in certain regions of the X space.)\
+> - The most general case of label noise.\
+> - feature dependent한 경우(NNAR)와 feature independent한 경우(NCAR & NAR)의 경우로 나눌 수 있음.
 
 
 
