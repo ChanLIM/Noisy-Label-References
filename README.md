@@ -82,7 +82,7 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
 ->label을 sort해서 적용하면 coteaching pair flipping과 동일
  
 >[Learning with Symmetric Label Noise: The Importance of Being Unhinged](https://arxiv.org/pdf/1505.07634.pdf) (van Rooyen, NIPS 2015)
- 
+ >>Symmetric label noise : where the learner observes samples from a distribution Dbar, which is a corruption of D where labels have some constant probability of being flipped. (Original Github Code Not Available)
  
  
  
