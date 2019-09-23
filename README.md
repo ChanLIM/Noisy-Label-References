@@ -2,7 +2,7 @@
 
 ## 1. Noisy Data Generation Methods
 
-### Objective : mimic the structure of noise when there are :
+### Objective : mimic the structure of noise in real life :
 * mistakes for similar classes 
 * mistakes for unknown classes
 
