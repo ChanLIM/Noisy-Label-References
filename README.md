@@ -121,8 +121,8 @@ Taxonomy of Label Noise in the Survey Paper
 > ex.) arbitrary labeling matrices & pairwise label noise
 > - pairwise label noise : Two classes c1 and c2 are selected. Each instance of class c1 has a probability to be incorrectly labeled as c2 and vice versa. For this label noise, only two nondiagonal entries of the labeling matrix are nonzero.
 
-NCAR and NAR considers that the label noise affects all instances with no distinction. -> not realistic
-Samples may be more likely mislabeled when they are similar to instances of another class.
+NCAR and NAR considers that the label noise affects all instances with no distinction. -> not realistic\
+Samples may be more likely mislabeled when they are similar to instances of another class.\
 More difficult samples or low density (low encountered cases) may have higher chances of mislabeling.
 
 3. NNAR - Noisy Not at Random Model
