@@ -93,6 +93,12 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  
  > Case 2: noisy labels are dependent on the features in addition to the correct labels
  
+ 
+### - [Genre-based Decomposition of email class noise](http://delivery.acm.org/10.1145/1560000/1557070/p427-kolcz.pdf?ip=115.145.226.106&id=1557070&acc=ACTIVE%20SERVICE&key=0EC22F8658578FE1%2EB50D9BE1468BDDBD%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1569291337_66262b6ec3313a2ed5693aa62837814e)(Kolcz, ACM SIGKDD 2009)
+ > Studies of data cleaning techniques often assume a uniform label noise model, however, which is seldom realized in practice.\
+ > ... class noise can have sustantial content specific bias. We also demonstrate that noise detection techniques based on classifier confidence tend to identify instances that human assessors arelikely to label in error. 
+
+
 
 ## 2. Related Works
 [Learning with Label Noise Github Page](https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise)
