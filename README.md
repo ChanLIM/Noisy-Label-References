@@ -16,7 +16,6 @@
 
 [Class Noise vs. Attribute Noise : A Quantitative Study of Their Impacts](http://www.cse.fau.edu/~xqzhu/papers/AIR.Zhu.2004.Noise.pdf)(Zhu, AI Review 2004)
 
-According to the classification of label noise in \
 [Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
 
 </details>
@@ -24,7 +23,11 @@ According to the classification of label noise in \
 ## Taxonomy of Label Noise in the Survey Paper
 <details>
   <summary>Show / Hide</summary>
-  ### 1. NCAR - Noisy Completely at Random Model
+  
+  According to the classification of label noise in \
+[Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
+  
+### 1. NCAR - Noisy Completely at Random Model
 > - the occurrence of an error E is independent of the other random variables, including the true class itself
 > - biased coin of noise rate / fair dice to choose wrong label
 > - uniform label noise
@@ -47,12 +50,6 @@ More difficult samples or low density (low encountered cases) may have higher ch
 
 </details>
 
-According to the classification of label noise in \
-[Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
-
-
-
-
 ## Noisy Data Generation Methods
 
 ### Objective : mimic the structure of noise in real life :
@@ -60,6 +57,9 @@ According to the classification of label noise in \
 * mistakes for unknown classes
 
 ### - [Learning with Biased Complementary Labels](https://arxiv.org/pdf/1711.09535.pdf) (Yu, ECCV 2018)
+<details>
+  <summary> Details </summary>
+ 
  >Where Y and Ybar is true and complementary labels, previous methods implicitly assume that 
  P(Y¯ = i|Y = j), ∀i ≠ j are identical, which is not true in practice because humans are biased toward their own experience.(표범만 봤던 사람은 치타를 봐도 표범이라고 label함) Therefore the transition probabilities should be different.
  
@@ -76,8 +76,14 @@ According to the classification of label noise in \
 >label noise가 각 사람의 경험의 차이에 의해 많이 일어나는데, 이를 해결하기 위한 방안으로 complementary label 제시.
 > -> true class에 영향을 받는 NAR
 
+</details>
+
+
 ### - [Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels](https://arxiv.org/pdf/1804.06872.pdf) (Han, NIPS 2018)
- > Uses **pair flipping** and **symmetric flipping**. Pair flipping refers to a case where a certain label is misclassified to a certain label since it's similar(but doesn't imply similarity in a way that two classes are paired). Symmetric flipping refers to a case where a label is not identified, so it is given any other random label
+<details>
+  <summary> Details </summary>
+  
+  > Uses **pair flipping** and **symmetric flipping**. Pair flipping refers to a case where a certain label is misclassified to a certain label since it's similar(but doesn't imply similarity in a way that two classes are paired). Symmetric flipping refers to a case where a label is not identified, so it is given any other random label
  
  > **How pair flipping is defined in this paper is different. Survey에서 말하는 pair flipping하고는 차이가 있음.** 
  > 'Coteaching pair flipping' method is not realistic in a way that two labels are just matched randomly, not according to how similar they look like so that people might make mistakes.
@@ -145,6 +151,11 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
 >[Learning with Symmetric Label Noise: The Importance of Being Unhinged](https://arxiv.org/pdf/1505.07634.pdf) (van Rooyen, NIPS 2015)
  >>Symmetric label noise : where the learner observes samples from a distribution Dbar, which is a corruption of D where labels have some constant probability of being flipped. (Original Github Code Not Available)
  >> **NCAR**
+
+
+</details>
+
+ 
  
  
  
