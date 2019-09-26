@@ -53,7 +53,11 @@ More difficult samples or low density (low encountered cases) may have higher ch
 * mistakes for similar classes 
 * mistakes for unknown classes
 
-#### - [Learning with Biased Complementary Labels](https://arxiv.org/pdf/1711.09535.pdf) (Yu, ECCV 2018)
+
+<details>
+  <summary>Show / Hide</summary>
+  
+  #### - [Learning with Biased Complementary Labels](https://arxiv.org/pdf/1711.09535.pdf) (Yu, ECCV 2018)
 <details>
   <summary> Details </summary>
  
@@ -166,6 +170,7 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  > Studies of data cleaning techniques often assume a uniform label noise model, however, which is seldom realized in practice.\
  > ... class noise can have substantial content specific bias. We also demonstrate that noise detection techniques based on classifier confidence tend to identify instances that human assessors are likely to label in error. 
 >>**NNAR** 찾기 어려운데 이 논문의 경우 NNAR을 해결하기 위한 방법 제시.
+  </details>
 
 그냥 inspiration 줄 만한 논문들
 #### - [Identifying Mislabeled Training Data](https://arxiv.org/pdf/1106.0219.pdf)(Brodley Friedl, JAIR 1999)
