@@ -27,12 +27,12 @@
   According to the classification of label noise in \
 [Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
   
-### 1. NCAR - Noisy Completely at Random Model
+#### 1. NCAR - Noisy Completely at Random Model
 > - the occurrence of an error E is independent of the other random variables, including the true class itself
 > - biased coin of noise rate / fair dice to choose wrong label
 > - uniform label noise
 
-### 2. NAR - Noisy at Random Model
+#### 2. NAR - Noisy at Random Model
 > - probability of error depends on the true class Y, but still independent of X
 > - allows modeling asymmetric label noise, when instances from certain classes are more prone to be mislabeled.
 > - NCAR label noise is a special case of NAR label noise.
@@ -43,7 +43,7 @@ NCAR and NAR considers that the label noise affects all instances with no distin
 Samples may be more likely mislabeled when they are similar to instances of another class.\
 More difficult samples or low density (low encountered cases) may have higher chances of mislabeling.
 
-### 3. NNAR - Noisy Not at Random Model
+#### 3. NNAR - Noisy Not at Random Model
 > - the occurrence of an error E is dependent on both variables X and Y,(mislabeling is more probable for certain classes and in certain regions of the X space.)
 > - The most general case of label noise.
 > - feature dependent한 경우(NNAR)와 feature independent한 경우(NCAR & NAR)의 경우로 나눌 수 있음.
@@ -52,11 +52,11 @@ More difficult samples or low density (low encountered cases) may have higher ch
 
 ## Noisy Data Generation Methods
 
-### Objective : mimic the structure of noise in real life :
+#### Objective : mimic the structure of noise in real life :
 * mistakes for similar classes 
 * mistakes for unknown classes
 
-### - [Learning with Biased Complementary Labels](https://arxiv.org/pdf/1711.09535.pdf) (Yu, ECCV 2018)
+#### - [Learning with Biased Complementary Labels](https://arxiv.org/pdf/1711.09535.pdf) (Yu, ECCV 2018)
 <details>
   <summary> Details </summary>
  
@@ -79,7 +79,7 @@ More difficult samples or low density (low encountered cases) may have higher ch
 </details>
 
 
-### - [Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels](https://arxiv.org/pdf/1804.06872.pdf) (Han, NIPS 2018)
+#### - [Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels](https://arxiv.org/pdf/1804.06872.pdf) (Han, NIPS 2018)
 <details>
   <summary> Details </summary>
   
@@ -159,23 +159,23 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  
  
  
-### - [Training deep neural-networks using a noise adaptation layer](https://openreview.net/pdf?id=H12GRgcxg) (Goldberger, ICLR 2017)
+#### - [Training deep neural-networks using a noise adaptation layer](https://openreview.net/pdf?id=H12GRgcxg) (Goldberger, ICLR 2017)
  > Case 1: noisy labels are only dependent on the correct labels
  
  > Case 2: noisy labels are dependent on the features in addition to the correct labels
  
  
-### [MentorNet]
+#### [MentorNet]
 
-### []
+#### []
  
-### - [Genre-based Decomposition of email class noise](http://delivery.acm.org/10.1145/1560000/1557070/p427-kolcz.pdf?ip=115.145.226.106&id=1557070&acc=ACTIVE%20SERVICE&key=0EC22F8658578FE1%2EB50D9BE1468BDDBD%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1569291337_66262b6ec3313a2ed5693aa62837814e)(Kolcz, ACM SIGKDD 2009)
+#### - [Genre-based Decomposition of email class noise](http://delivery.acm.org/10.1145/1560000/1557070/p427-kolcz.pdf?ip=115.145.226.106&id=1557070&acc=ACTIVE%20SERVICE&key=0EC22F8658578FE1%2EB50D9BE1468BDDBD%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1569291337_66262b6ec3313a2ed5693aa62837814e)(Kolcz, ACM SIGKDD 2009)
  > Studies of data cleaning techniques often assume a uniform label noise model, however, which is seldom realized in practice.\
  > ... class noise can have substantial content specific bias. We also demonstrate that noise detection techniques based on classifier confidence tend to identify instances that human assessors are likely to label in error. 
 >>**NNAR** 찾기 어려운데 이 논문의 경우 NNAR을 해결하기 위한 방법 제시.
 
 그냥 inspiration 줄 만한 논문들
-### - [Identifying Mislabeled Training Data](https://arxiv.org/pdf/1106.0219.pdf)(Brodley Friedl, JAIR 1999)
+#### - [Identifying Mislabeled Training Data](https://arxiv.org/pdf/1106.0219.pdf)(Brodley Friedl, JAIR 1999)
  > Using two kinds of filtering methods : consensus filters and majority vote filters
  > consensus filters - conservative at throwing away good data at the expense of retaining bad data
  > majority filters - better at detecting bad data at the expense of throwing away good data.
