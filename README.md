@@ -142,7 +142,7 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  > ... class noise can have substantial content specific bias. We also demonstrate that noise detection techniques based on classifier confidence tend to identify instances that human assessors are likely to label in error. 
 >>**NNAR** 찾기 어려운데 이 논문의 경우 NNAR을 해결하기 위한 방법 제시.
 
-그냥  논문들
+그냥 inspiration 줄 만한 논문들
 ### - [Identifying Mislabeled Training Data](https://arxiv.org/pdf/1106.0219.pdf)(Brodley Friedl, JAIR 1999)
  > Using two kinds of filtering methods : consensus filters and majority vote filters
  > consensus filters - conservative at throwing away good data at the expense of retaining bad data
