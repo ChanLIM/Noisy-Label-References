@@ -133,13 +133,35 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
  > Case 2: noisy labels are dependent on the features in addition to the correct labels
  
  
+### [MentorNet]
+
+### []
+ 
 ### - [Genre-based Decomposition of email class noise](http://delivery.acm.org/10.1145/1560000/1557070/p427-kolcz.pdf?ip=115.145.226.106&id=1557070&acc=ACTIVE%20SERVICE&key=0EC22F8658578FE1%2EB50D9BE1468BDDBD%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1569291337_66262b6ec3313a2ed5693aa62837814e)(Kolcz, ACM SIGKDD 2009)
  > Studies of data cleaning techniques often assume a uniform label noise model, however, which is seldom realized in practice.\
  > ... class noise can have substantial content specific bias. We also demonstrate that noise detection techniques based on classifier confidence tend to identify instances that human assessors are likely to label in error. 
 >>**NNAR** 찾기 어려운데 이 논문의 경우 NNAR을 해결하기 위한 방법 제시.
 
+그냥  논문들
+### - [Identifying Mislabeled Training Data](https://arxiv.org/pdf/1106.0219.pdf)(Brodley Friedl, JAIR 1999)
+ > Using two kinds of filtering methods : consensus filters and majority vote filters
+ > consensus filters - conservative at throwing away good data at the expense of retaining bad data
+ > majority filters - better at detecting bad data at the expense of throwing away good data.
 
-## 3. Evaluation Measure
+
+## Consequences of Label Noise on Learning
+1. Theoretical and empirical evidences of impact of label noise on classification performances
+2. Increases the necessary number of samples and complexity for learning
+3. Distortion of observed frequencies
+4. Deterioration of feature selection
+
+## Approaches to Handle Label Noise
+1. Label Noise-Robust Model
+2. Label Cleansing Methods for Noisy Datasets
+3. Label Noise-Tolerant Learning Model
+
+
+## Evaluation Measure
 
 1. Accuracy
 2. Label Precision
