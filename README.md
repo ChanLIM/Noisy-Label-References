@@ -1,4 +1,4 @@
-# Noisy-Label-References
+# Noisy-Label-References Abstract
 
 ## General Info, Survey Paper
 [Learning with Label Noise Github Page](https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise)
