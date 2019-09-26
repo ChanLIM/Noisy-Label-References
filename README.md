@@ -1,6 +1,17 @@
 # Noisy-Label-References Abstract
 
+<details>
+  <summary>Show / Hide</summary>
+  
+
+
+</details>
+
+
 ## General Info, Survey Paper
+<details>
+  <summary>Show / Hide</summary>
+  
 [Learning with Label Noise Github Page](https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise)
 
 [Class Noise vs. Attribute Noise : A Quantitative Study of Their Impacts](http://www.cse.fau.edu/~xqzhu/papers/AIR.Zhu.2004.Noise.pdf)(Zhu, AI Review 2004)
@@ -8,9 +19,12 @@
 According to the classification of label noise in \
 [Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
 
-Taxonomy of Label Noise in the Survey Paper
+</details>
 
-### 1. NCAR - Noisy Completely at Random Model
+## Taxonomy of Label Noise in the Survey Paper
+<details>
+  <summary>Show / Hide</summary>
+  ### 1. NCAR - Noisy Completely at Random Model
 > - the occurrence of an error E is independent of the other random variables, including the true class itself
 > - biased coin of noise rate / fair dice to choose wrong label
 > - uniform label noise
@@ -30,6 +44,13 @@ More difficult samples or low density (low encountered cases) may have higher ch
 > - the occurrence of an error E is dependent on both variables X and Y,(mislabeling is more probable for certain classes and in certain regions of the X space.)
 > - The most general case of label noise.
 > - feature dependent한 경우(NNAR)와 feature independent한 경우(NCAR & NAR)의 경우로 나눌 수 있음.
+
+</details>
+
+According to the classification of label noise in \
+[Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
+
+
 
 
 ## Noisy Data Generation Methods
