@@ -8,7 +8,7 @@
 </details>
 
 
-## General Info, Survey Paper
+## General Info
 <details>
   <summary>Show / Hide</summary>
   
@@ -18,7 +18,7 @@
 
 </details>
 
-## Taxonomy of Label Noise in the Survey Paper
+## Taxonomy of Label Noise
 <details>
   <summary>Show / Hide</summary>
   
@@ -151,10 +151,6 @@ CIFAR 100의 경우 Superclass 써서 조금 다른 방법
 
 
 </details>
-
- 
- 
- 
  
 #### - [Training deep neural-networks using a noise adaptation layer](https://openreview.net/pdf?id=H12GRgcxg) (Goldberger, ICLR 2017)
  > Case 1: noisy labels are only dependent on the correct labels
