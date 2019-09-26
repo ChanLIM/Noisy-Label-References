@@ -12,11 +12,9 @@
 <details>
   <summary>Show / Hide</summary>
   
-[Learning with Label Noise Github Page](https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise)
-
-[Class Noise vs. Attribute Noise : A Quantitative Study of Their Impacts](http://www.cse.fau.edu/~xqzhu/papers/AIR.Zhu.2004.Noise.pdf)(Zhu, AI Review 2004)
-
-[Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
+* [Learning with Label Noise Github Page](https://github.com/subeeshvasu/Awesome-Learning-with-Label-Noise)
+* [Class Noise vs. Attribute Noise : A Quantitative Study of Their Impacts](http://www.cse.fau.edu/~xqzhu/papers/AIR.Zhu.2004.Noise.pdf)(Zhu, AI Review 2004)
+* [Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
 
 </details>
 
@@ -24,8 +22,7 @@
 <details>
   <summary>Show / Hide</summary>
   
-  According to the classification of label noise in \
-[Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
+  According to the classification of label noise in [Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
   
 #### 1. NCAR - Noisy Completely at Random Model
 > - the occurrence of an error E is independent of the other random variables, including the true class itself
