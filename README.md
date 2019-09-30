@@ -22,7 +22,10 @@
 <details>
   <summary>Show / Hide</summary>
   
+  
+  
   According to the classification of label noise in [Classification in the Presence of Label Noise: A Survey](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6685834)(Frenay, IEEE 2014)
+  [A Comprehensive Introduction to Label Noise](https://pdfs.semanticscholar.org/c44f/388832d6f309b1bb9ccdeddee491f195e6cd.pdf)(Frenay, 2014)
   
 #### 1. NCAR - Noisy Completely at Random Model
 > - the occurrence of an error E is independent of the other random variables, including the true class itself
@@ -44,6 +47,13 @@ More difficult samples or low density (low encountered cases) may have higher ch
 > - the occurrence of an error E is dependent on both variables X and Y,(mislabeling is more probable for certain classes and in certain regions of the X space.)
 > - The most general case of label noise.
 > - feature dependent한 경우(NNAR)와 feature independent한 경우(NCAR & NAR)의 경우로 나눌 수 있음.
+
+## Sources of Mislabelling
+* Restricted information
+* Restricted description language
+* Mistakes (even made by experts)
+* Subjective bias
+
 
 </details>
 
