@@ -90,9 +90,7 @@ More difficult samples or low density (low encountered cases) may have higher ch
 </details>
 
   #### - [NLNL: Negative Learning for Noisy Labels](http://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_NLNL_Negative_Learning_for_Noisy_Labels_ICCV_2019_paper.pdf) (Kim et al, ICCV 2019)
-  Complementary Labels를 이용한 Negative Learning을 통해 clean label들을 선별하고 선택적으로 이 dataset에 기존 ML의 방식인 Positive Learning 방식을 이용하여, SelNLPL 이라는 새로운 모델을 제시함.
-  PL로 학습한 모델은 다시 Noisy label로 분류되었던 데이터의 labeling을 다시 하는데 쓰이고, 결과적으로 cleaner dataset을 만드는 데에 도움을 줌.
-
+  Complementary Label을 이용하여 noisy label을 filterning 하는 방법을 차용. Negative Learning을 통해 clean label들을 선별하고 선택적으로 Positive Learning을 이용하여 모델을 학습함. PL로 학습한 모델은 다시 Noisy label로 분류되었던 데이터의 labeling을 다시 하는데 쓰이고, 결과적으로 cleaner dataset을 만드는 데에 도움을 줌. -> SelNLPL(Selective Negative Learning and Positive Learning)
 
 
 #### - [Co-teaching: Robust Training of Deep Neural Networks with Extremely Noisy Labels](https://arxiv.org/pdf/1804.06872.pdf) (Han, NIPS 2018)
